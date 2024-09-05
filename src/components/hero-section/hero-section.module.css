@@ -1,0 +1,20 @@
+.heroSection {
+    min-height: 840px;
+    max-height: 1080px;
+    
+}
+
+@media screen and (max-width: 1480px) {
+    .heroSection {
+      background-color: rgb(24, 24, 24, 0.85);
+      background-blend-mode: multiply;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .heroSection
+    {
+        background: none !important;
+        min-height: 480px;
+    }
+}
