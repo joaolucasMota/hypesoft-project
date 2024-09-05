@@ -1,0 +1,16 @@
+# Usando uma imagem base do Node.js aqui
+FROM node:18-alpine
+# Definindo o diretório de trabalho dentro do contêiner
+WORKDIR /app
+# Copiando o package.json e o package-lock.json pra dentro
+COPY package*.json ./
+# Instalando as dependência do NPM
+RUN npm install
+# Copiando todo o código da aplicação pra dentro do contêiner
+COPY . .
+# Expondo na porta 3000
+EXPOSE 3000
+# Definindo a variável de ambiente para o modo de desenvolvimento
+ENV NODE_ENV=development
+# Comando pra rodar a aplicação em modo de desenvolvimento
+CMD ["npm", "run", "dev"]

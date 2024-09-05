@@ -1,0 +1,25 @@
+########################################## Etapa de build
+FROM node:18-alpine AS builder
+# Defina o diretório de trabalho dentro do contêiner
+WORKDIR /app
+# Copiando o package.json e o package-lock.json pra dentro
+COPY package*.json ./
+# Instalando as dependência do NPM
+RUN npm install
+# Copiando todo o código da aplicação pra dentro do contêiner
+COPY . .
+# Compilando o projeto Next.js
+RUN npm run build
+# Prune nas dependências de desenvolvimento para a versão final
+RUN npm prune --production
+
+########################################## Etapa de produção
+FROM node:18-alpine
+# Definindo o diretório de trabalho dentro do contêiner final
+WORKDIR /app
+# Copie o código da etapa de build para o contêiner de produção
+COPY --from=builder /app ./
+# Expondo a porta 3000
+EXPOSE 3000
+# Comando para rodar a aplicação em prod
+CMD ["npm", "run", "start"]
