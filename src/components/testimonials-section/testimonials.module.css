@@ -1,0 +1,126 @@
+.testimonialsContainer {
+    padding-bottom: 8em;
+    margin-inline: auto;
+    max-width: 1384px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimonials {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 2em;
+    max-width: 100%;
+    gap: 1em 2em;
+}
+
+.testimonialList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    flex-wrap: wrap;
+}
+
+.testimonialList ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.testimonialItem {
+    background-color: #f6f7f9;
+    border-radius: 4px;
+    max-height: 100px;
+    min-width: 312px;
+    padding: 1.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.testimonialItem:hover {
+    outline: 2px solid var(--secPink);
+    cursor: pointer;
+}
+
+.testimoniaAvatarCircle {
+    background-color: var(--gray_500);
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+}
+
+.testimoniaItemText h3 {
+    color: var(--primary);
+}
+
+.testimoniaItemText p {
+    color: var(--gray_500);
+}
+
+.testimonialQuote {
+    padding: 1.5em 4em 2.5em 4em;
+    background-color: #f6f7f9;
+    color: var(--primary);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.quoteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.quoteRating {
+    display: flex;
+    align-items: center;
+    gap: .5em
+}
+
+.testimonialQuote q {
+    font-size: 32px;
+    line-height: 1.6;
+    max-width: 864px;
+    /* font-size: 24px; */
+    /* line-height: 1.5; */
+}
+
+@media screen and (max-width: 1480px) {
+    .testimonials {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .testimonialQuote q {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .testimonialList {
+        max-width: none;
+        max-width: 100%;
+    }
+
+    .testimonialList ul {
+        padding: 1em 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .testimonialQuote q {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
