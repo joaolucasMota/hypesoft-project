@@ -6,8 +6,6 @@ O projeto é baseado em um prototipo desenvolvido pela Hypesoft, desenvolvido co
 
 ## 🎨 Layout
 
-O layout da aplicação está disponível no Figma:
-
 ![Tela inicial](./readme-image.png)
 
 ## Deploy
