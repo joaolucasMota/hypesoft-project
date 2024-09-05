@@ -6,6 +6,7 @@ import { SendSchema } from "@/validation/sendError";
 import emailjs from "@emailjs/browser";
 import Send from "@/assets/icons/sendMessage.svg";
 import { IContact } from "@/interface";
+import toast, { Toaster } from "react-hot-toast";
 
 export function ContactForm() {
     const handleSubmit = (
@@ -21,18 +22,21 @@ export function ContactForm() {
             )
             .then(
                 () => {
-                    console.log("Email enviado com sucesso");
-                    console.log(values)
+                    toast.success('Email Sent!')
                     resetForm();
                 },
                 (error) => {
                     console.error("Erro ao enviar o email:", error.text);
+                    toast.error('Sent error!')
                 }
             );
     };
 
     return (
         <div className={styles.container}>
+            <div><Toaster
+            position="top-right"
+            reverseOrder={false}/></div>
             <h2>Let me know here.</h2>
             <Formik
                 initialValues={{ fullName: "", email: "", subject: "", message: "" }}
