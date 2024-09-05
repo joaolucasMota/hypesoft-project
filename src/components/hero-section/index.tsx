@@ -3,7 +3,7 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 
 
-import HeroImage from "@/assets/hero_image.png";
+import HeroImage from "@/assets/hero_image.jpg";
 
 export function HeroSection() {
     return (
