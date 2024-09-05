@@ -1,0 +1,67 @@
+.btn
+{
+    padding: 0 2em;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 56px;
+    border-radius: 5px;
+    user-select: none;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+/* --- primary --- */
+
+.btn-primary
+{
+    background-color: var(--secPurple);
+    color: var(--white);
+}
+
+.btn-primary:hover
+{
+    background-color: #6400CC;
+}
+
+/* --- secundary --- */
+
+.btn-secundary
+{
+    background-color: var(--gray_100);
+    color: var(--primary);
+}
+
+.btn-secundary:hover
+{
+    background-color: #AEB1B7;
+}
+
+/* --- social button --- */
+
+.social-btn
+{
+    background-color: var(--gray_100);
+    border-radius: 5px;
+    user-select: none;
+    height: 48px;
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-rounded
+{
+    border-radius: 50% !important;
+    height: 60px;
+    width: 60px;
+}
+
+.social-btn:hover
+{
+    background-color: var(--secPurple);
+}
