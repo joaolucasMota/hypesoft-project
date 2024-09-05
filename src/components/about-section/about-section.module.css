@@ -1,0 +1,80 @@
+.aboutSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 8em 2em;
+    gap: 4em 88px;
+}
+
+.aboutRigth {
+    display: flex;
+    flex-direction: column;
+    width: 672px;
+    gap: 2em;
+    flex: 1/2;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutText h2 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.aboutText p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray_500);
+}
+.aboutInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 50px;
+}
+
+.aboutInfoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.aboutInfoItem span {
+    color: var(--secPink);
+    line-height: 64px;
+    font-weight: 300;
+    font-size: 56px;
+}
+
+.aboutInfoItem p {
+    color: var(--white);
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 94px;
+}
+
+@media screen and (max-width: 824px) {
+    .aboutSection {
+        margin: 4em 2em;
+    }
+
+    .aboutText h2 { 
+        font-size: 32px;
+        line-height: 1.5; 
+    }
+
+    .aboutText p, .aboutInfoItem p { 
+        font-size: 16px;
+    }
+
+    .aboutInfoItem span {
+        font-size: 36px;
+    }
+}
