@@ -1,0 +1,75 @@
+.span-purple
+{
+    color: var(--secPurple);
+}
+
+.span-pink
+{
+    color: var(--secPink);
+}
+
+.purple-highlighter
+{
+    background: linear-gradient(to top, #7d00ff20 50%, transparent 50%);
+}
+
+.pink-highlighter
+{
+    background: linear-gradient(to top, #ed1ca620 50%, transparent 50%);
+}
+
+/* --- Font Styles --- */
+
+.font-body-xl
+{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.font-body-small
+{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.font-body-large
+{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.font-heading-01
+{
+    font-size: 80px;
+    line-height: 96px;
+}
+
+.font-heading-04
+{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+.font-heading-05
+{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+}
+
+.font-button-02 {
+    letter-spacing: 2%;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 824px) {
+    .font-heading-05
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

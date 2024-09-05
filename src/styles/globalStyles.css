@@ -1,0 +1,86 @@
+:root 
+{
+    --secPurple:    #7D00FF;
+    --secPink:      #ED1CA6;
+    --primary:      #242424;
+    --gray_500:     #A5A5A5;
+    --gray_100:     #DFE3EB;
+    --white:        #FFFFFF;
+    --selection:    #7D00FF10;
+}
+
+* 
+{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus 
+{
+    outline: 2px solid orange;
+}
+
+::selection
+{
+    background-color: var(--selection);
+}
+
+html
+{
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: var(--primary);
+    color: var(--white);
+    height: 100%;
+}
+
+a
+{
+    transition: .15s;
+    text-decoration: none;
+    color: inherit;
+}
+
+hr
+{
+    border: 0;
+    border-bottom: 3px solid var(--secPink);
+    margin: 1em auto 0 auto;
+    border-radius: 3px;
+    width: 80px;
+}
+
+button 
+{
+    cursor: pointer;
+}
+
+/* -----  ----- ScrollBar -----  ----- */
+
+::-webkit-scrollbar 
+{
+    height: .5em;
+    width: .75em;
+}
+
+::-webkit-scrollbar-track 
+{
+    border: 1px solid #333;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    box-sizing: border-box;
+    background: var(--gray_100);
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--gray_500); 
+}
