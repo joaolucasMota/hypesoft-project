@@ -1,0 +1,40 @@
+.companyContainer {
+    max-width: 1384px;
+    margin-inline: auto;
+    margin-bottom: 8em;
+    padding: 0 2em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em 2em;
+}
+
+.companyContainer h2 {
+    min-width: 312px;
+    flex: 1;
+}
+
+.companyList {
+    overflow-x: auto;
+    padding: 1em 0;
+}
+
+.companyList ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+.companyItem {
+    background-color: #f6f7f9;
+    border-radius: 8px;
+    user-select: none;
+    padding: 0 1.5em;
+    height: 120px;
+    width: 164px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
