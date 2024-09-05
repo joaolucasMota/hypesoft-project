@@ -10,6 +10,9 @@ O layout da aplicação está disponível no Figma:
 
 ![Tela inicial](./readme-image.png)
 
+## Deploy
+- [Deploy](https://hypesoft-project.vercel.app/)
+
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
