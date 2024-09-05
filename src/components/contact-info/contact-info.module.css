@@ -1,0 +1,60 @@
+.container { 
+    display: flex;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 2em;
+    border-radius: 8px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    
+
+}
+
+.container h2 {
+    color: var(--primary);
+    align-items: left;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.infosContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+
+}
+
+.info {
+
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    font-size: 18px;
+    line-height: 28px;
+
+
+}
+
+
+.icon{
+    background-color: var(--gray_100);
+    padding: 1em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height:80px;
+}
+
+.socialButtons{
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
+}
