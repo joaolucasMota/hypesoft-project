@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev # Dockerfile.dev para desenvolvimento
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_22ooxru
+      - NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_fzfoedk
+      - NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=Mh8RcEkh8fcC_M8Fe
+    command: npm run dev
+
+  app-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod # Dockerfile.prod para produção
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_22ooxru
+      - NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_fzfoedk
+      - NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=Mh8RcEkh8fcC_M8Fe
+    command: npm run start
