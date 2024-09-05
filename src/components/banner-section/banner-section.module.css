@@ -1,0 +1,37 @@
+.bannerContainer {
+    max-width: 1384px;
+    margin: 0 auto;
+}
+
+.bannerSection {
+    margin-bottom: 8em;
+    margin: 4em 2em;
+    padding: 4em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.bannerSection h2 {
+    text-align: center;
+    line-height: 40px;
+    font-weight: 300;
+    max-width: 520px;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 824px) {
+    .bannerSection {
+        padding: 2em 0;
+    }
+
+    .bannerSection h2 {
+        line-height: 32px;
+        font-weight: 300;
+        max-width: 520px;
+        font-size: 24px;
+    }
+}
