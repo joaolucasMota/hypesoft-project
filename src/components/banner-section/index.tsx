@@ -6,7 +6,7 @@ import BannerBackground from "@/assets/images/banner.svg"
 
 export function BannerSection() {
     return (
-        <div className={styles.bannerContainer}>
+        <div className={styles.bannerContainer} data-testid="banner-section">
             <div className={styles.bannerSection} style={{
             backgroundImage: `url(${BannerBackground.src})`,
             backgroundPosition: 'center bottom',

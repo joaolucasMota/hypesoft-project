@@ -11,7 +11,7 @@ import ArrowIconPurple from "@/assets/icons/arrow_right_purple.svg";
 
 export function CompanySection() {
     return (
-        <div className={styles.companyContainer}>
+        <div className={styles.companyContainer} data-testid="company-section">
             <h2 className="font-heading-05">I worked with <span className="span-pink purple-highlighter">289+</span> Companies all over the World.</h2>
             <nav className={styles.companyList}>
                 <ul>

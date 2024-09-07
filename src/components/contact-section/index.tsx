@@ -6,7 +6,7 @@ import { ContactInfo } from "../contact-info";
 
 export function ContactSection() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-testid="contact-section">
             <ContactForm />
             <ContactInfo/>
         </div>

@@ -6,7 +6,7 @@ import QuoteImage from "@/assets/images/quote.svg";
 
 export function TestimonialsSection() {
     return (
-        <div className={styles.testimonialsContainer}>
+        <div className={styles.testimonialsContainer} data-testid="testimonials-section">
             <div>
                 <h2 className="font-heading-04">Testimonial</h2>
                 <hr />

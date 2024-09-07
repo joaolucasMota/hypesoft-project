@@ -7,7 +7,7 @@ import HypesoftLogo from "@/assets/hypesoft_logo.svg"
 export function Footer() {
     return (
         <>
-            <footer className={styles.footer}>
+            <footer className={styles.footer} data-testid="footer">
                 <Image 
                     src={HypesoftLogo} 
                     alt="Hypesoft Logo"

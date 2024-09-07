@@ -7,7 +7,7 @@ import { Button } from "../buttons";
 
 export function AboutSection() {
     return (
-        <div className={styles.aboutSection}>
+        <div className={styles.aboutSection} data-testid="about-section">
             <Image 
                 src={AboutImage} 
                 alt="About image"

@@ -9,7 +9,7 @@ import ArrowIconBlack from "@/assets/icons/arrow_right_black.svg";
 
 export function ServicesSection() {
     return (
-        <div className={styles.servicesSection}>
+        <div className={styles.servicesSection} data-testid="services-section">
             <h2 className="font-heading-04">My Service</h2>
             <hr />
             <nav className={styles.servicesList}>

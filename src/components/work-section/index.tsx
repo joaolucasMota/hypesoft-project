@@ -15,7 +15,7 @@ import work6 from "@/assets/images/work6.png";
 
 export function WorkSection() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-testid="work-section">
 
             <h2 className="font-heading-04">My Selected Work</h2>
             <hr />
