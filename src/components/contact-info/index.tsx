@@ -10,7 +10,7 @@ import { SocialButton } from "../buttons";
 
 export function ContactInfo() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-testid="contact-info">
             <h2>
                 Get In Touch
             </h2>

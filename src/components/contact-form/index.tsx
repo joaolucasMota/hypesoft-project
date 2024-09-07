@@ -33,7 +33,7 @@ export function ContactForm() {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-testid="contact-form">
             <div><Toaster
             position="top-right"
             reverseOrder={false}/></div>
