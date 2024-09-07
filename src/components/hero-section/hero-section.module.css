@@ -1,8 +1,14 @@
 .heroSection {
     min-height: 840px;
     max-height: 1080px;
-    
-}
+    background-image: url('../../assets/hero_image.webp'); /* Substitua com o caminho correto */
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1920px;
+    margin: auto;
+    transition: 0.25s;
+  }
 
 @media screen and (max-width: 1480px) {
     .heroSection {
