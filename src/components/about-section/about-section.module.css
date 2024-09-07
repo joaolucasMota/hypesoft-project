@@ -7,6 +7,12 @@
     gap: 4em 88px;
 }
 
+.aboutImage {
+    object-fit: contain;
+    height: fit-content;
+    min-width: 280px;
+    max-width: 480px;
+}
 .aboutRigth {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,9 @@
-import styles from "./about-section.module.css"
-import Image from "next/image"
+import styles from "./about-section.module.css";
+import Image from "next/image";
 
 
-import AboutImage from "@/assets/about_image.png"
-import { Button } from "../buttons"
+import AboutImage from "@/assets/about_image.png";
+import { Button } from "../buttons";
 
 export function AboutSection() {
     return (
@@ -11,12 +11,7 @@ export function AboutSection() {
             <Image 
                 src={AboutImage} 
                 alt="About image"
-                style={{
-                    objectFit: 'contain',
-                    height: 'fit-content',
-                    minWidth: '280px',
-                    maxWidth: '480px',
-                }}
+                className={styles.aboutImage}
             />
             <div className={styles.aboutRigth}>
                 <div className={styles.aboutText}>

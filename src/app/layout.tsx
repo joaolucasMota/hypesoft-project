@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import OpenGraphImage from "/public/opengraph_banner.png";
+import OpenGraphImage from "../../public/opengraph_banner.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
