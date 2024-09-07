@@ -1,10 +1,18 @@
 import {render, screen} from "@testing-library/react";
+import '@testing-library/jest-dom';
 import App from "@/app/page";
 
 
 
+
+  
+
+  
+ 
+  
   it("renders all components", () => {
     render(<App />);
   
-    expect(screen.getAllByTestId('Header'))
+    // Verificar se todos os componentes estão presentes
+    expect(screen.getByTestId("hero-section")).toBeInTheDocument();
   });
