@@ -2,7 +2,7 @@ import styles from "./header.module.css"
 
 export function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-testid="header">
       <div className={styles.menu}>
         <nav className={styles.menuItens}>
           <ul>
