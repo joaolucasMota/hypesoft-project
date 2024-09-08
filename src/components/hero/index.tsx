@@ -4,7 +4,7 @@ import { Button, SocialButton } from "../buttons";
 
 export function Hero() {
   return (
-    <div className={styles.heroContainer}>
+    <div className={styles.heroContainer} data-testid="hero">
       <div className={styles.heroLeft}>
         <div className={styles.heroInfo}>
           <h1 className="font-heading-01">Hello, I’m John, a <span className="span-purple"><span className="purple-highlighter">Software Engine</span>er.</span></h1>
