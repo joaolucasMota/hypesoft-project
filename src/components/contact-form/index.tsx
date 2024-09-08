@@ -34,9 +34,11 @@ export function ContactForm() {
 
     return (
         <div className={styles.container} data-testid="contact-form">
-            <div><Toaster
-            position="top-right"
-            reverseOrder={false}/></div>
+            <div>
+                <Toaster
+                position="top-right"
+                reverseOrder={false}/>
+            </div>
             <h2>Let me know here.</h2>
             <Formik
                 initialValues={{ fullName: "", email: "", subject: "", message: "" }}
@@ -57,6 +59,7 @@ export function ContactForm() {
                                 name="fullName"
                                 component="div"
                                 className={styles.errorMessage}
+                                data-testid="fullName-error"
                             />
                         </div>
 
@@ -71,6 +74,7 @@ export function ContactForm() {
                                 name="email"
                                 component="div"
                                 className={styles.errorMessage}
+                                data-testid="email-error"
                             />
                         </div>
                     </div>
@@ -86,6 +90,7 @@ export function ContactForm() {
                             name="subject"
                             component="div"
                             className={styles.errorMessage}
+                            data-testid="subject-error"
                         />
                     </div>
 
@@ -101,11 +106,12 @@ export function ContactForm() {
                             name="message"
                             component="div"
                             className={styles.errorMessage}
+                            data-testid="message-error"
                         />
                     </div>
 
                     <div>
-                        <button className={styles.formButton} type="submit">
+                        <button className={styles.formButton} type="submit" data-testid="submit-button">
                             SEND MESSAGE
                             <Image src={Send} alt="send icon" />
                         </button>
