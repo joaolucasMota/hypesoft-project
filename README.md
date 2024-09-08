@@ -51,6 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Next](https://nextjs.org/)**
 - **[Yup](https://www.npmjs.com/package/yup)**
 - **[EmailJs](https://www.npmjs.com/package/yup)**
+- **[Jest](https://jestjs.io/pt-BR/)**
 
 
 ### Utilitários
